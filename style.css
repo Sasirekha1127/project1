@@ -1,6 +1,13 @@
-h2{
+.h2{
     font-family: cursive;
     text-align: center;
     color: darkmagenta;
     text-decoration:underline;
+   
+}
+.div1{
+    background-color: lightgreen;
+    width: 20%;
+    height: 100px;
+     background-image: url('./img/185034_mini_ipod_music_icon.png');
 }
