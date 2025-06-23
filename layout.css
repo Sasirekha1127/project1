@@ -1,0 +1,38 @@
+.session{
+    height: 150px;
+    width: 100%;
+    background-color: blueviolet;
+
+}
+.center{
+    height: 150px;
+    width: 80%;
+    background-color: brown;
+    margin:0 auto;
+}
+.left{
+    height: 150px;
+    width: 30%;
+    background-color: darkorange;
+    float: left;
+}
+.right{
+    height: 150px;
+    width: 50%;
+    background-color: darkblue;
+    float: right;
+}
+.row{
+    height: 70px;
+    width: 95%;
+    background-color: hotpink;
+    margin: 2px auto;
+}
+.col{
+    height:72px;
+    width:32% ;
+    background-color: yellow;
+    float: left;
+    margin-left: 2px;
+}
+
