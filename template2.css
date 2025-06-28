@@ -1,0 +1,14 @@
+.bg{
+    height: 100px;
+    width: 28%;
+    background-color:red;
+    margin: 0 auto;
+    background-image:linear-gradient(to top,red,yellow);
+    justify-content: centera;
+}
+/* .h1{
+    text-align: center;
+    color: white;
+    font-size: 60px;
+    width: 600px;
+} */

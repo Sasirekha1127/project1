@@ -1,8 +1,7 @@
 .session{
     height: 150px;
     width: 100%;
-    background-color: blueviolet;
-
+    background-color: linear-gradient(to right,blueviolet,lightblue);
 }
 .center{
     height: 150px;
@@ -35,4 +34,4 @@
     float: left;
     margin-left: 2px;
 }
-
+    
