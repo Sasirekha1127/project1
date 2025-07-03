@@ -1,14 +1,12 @@
 .bg{
-    height: 100px;
-    width: 28%;
+    height: 350px;
+    width: 100%;
     background-color:red;
-    margin: 0 auto;
-    background-image:linear-gradient(to top,red,yellow);
-    justify-content: centera;
+    display: grid; 
 }
-/* .h1{
-    text-align: center;
-    color: white;
-    font-size: 60px;
-    width: 600px;
-} */
+.h1,.h2,.h3{
+    height: 100px;
+    width: 50%;
+    background-color: blue;
+}
+

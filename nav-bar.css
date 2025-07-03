@@ -1,0 +1,40 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+.dropdown{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    list-style-type: none;
+}
+a{
+    display: block;
+    width: 200px;
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-align: center;
+}
+a:hover{
+    background-color: aqua;
+}
+.service{
+    list-style-type: none;
+    display: none;
+} 
+.dropdown li:hover > .service{
+    display: block;
+}
+.submenu{
+    list-style-type: none;
+    transform:translate(200px);
+    position: absolute; 
+    display: none;
+}
+.service  li:hover > .submenu{
+   display: block;
+}  
