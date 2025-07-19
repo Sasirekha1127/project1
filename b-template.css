@@ -1,4 +1,3 @@
-/* Import Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap');
 
 * {
@@ -38,7 +37,6 @@
   background-color: greenyellow;
   color: black;
   font-weight: bold;
-  transition: 0.3s;
 }
 
 /* Sections */
@@ -50,32 +48,104 @@ section {
 
 /* Home Section */
 #home {
-  background: url('./../img/coffee-bg-.jpeg') no-repeat center center/cover;
+  background: url(./../img/coffee-bg-.jpeg) no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-#home h1{
-     text-shadow:
+
+#home h1 {
+  text-shadow:
     0px 1px 0px #ccc,
     0px 2px 0px #ccc,
     0px 3px 0px #ccc,
     0px 4px 0px #ccc;
 }
+
 #home p {
   font-size: 30px;
   color: white;
 }
-.py{
-    
-}
 
-/* About image */
+
 #about-img {
-  /* width: 100%; */
   aspect-ratio: 4 / 3;
   border-radius: 15px;
   background: url('./../img/about-coffee-.jpeg') no-repeat center center / cover;
+  width: 100%;
+  max-width: 500px;  
+  height: auto;
+  margin: 0 auto;
 }
-/* product */
-#card{
-    height: 200px;
-    width: 200px;
+
+.card {
+  background-color: white !important;
+  border: none !important;
+  box-shadow: 15px 20px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 20px !important;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.card-img-top {
+  height: 250px;
+  object-fit: cover;
+}
+
+.signin {
+  background-color: greenyellow;
+  color: black;
+  font-weight: bold;
+}
+
+/* Contact Section */
+#contact {
+  background-color: #f8f8f8;
+}
+
+#contact h1 {
+  font-weight: bold;
+}
+
+#contact img {
+  max-height: 400px;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 10px;
+}
+
+#contact .box {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact input,
+#contact textarea {
+  margin-bottom: 15px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+#contact .btn {
+  background-color: greenyellow;
+  color: black;
+  font-weight: bold;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+#contact .btn:hover {
+  background-color: #b3e11a;
 }
