@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="form.css" />
+    <script src="form.js" defer></script>
+    <title>Register</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form">
+        <h1>Register</h1>
+
+        <div class="input-group">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" name="fullname" placeholder="Enter your Fullname"/>
+          <span id="name-error" class="error-message"></span>
+        </div>
+
+        <div class="input-group">
+          <label for="emailid">Email Id</label>
+          <input type="text" id="emailid" name="emailid" placeholder="Enter your Email Id" />
+          <span id="email-error" class="error-message"></span>
+        </div>
+
+        <div class="input-group">
+          <label for="mobile">Mobile</label>
+          <input type="tel" id="mobile" name="mobile" placeholder="Enter your Moblie Number" />
+          <span id="mobile-error" class="error-message"></span>
+        </div>
+
+        <div class="input-group">
+          <label for="dob">Date of Birth</label>
+          <input type="date" id="dob" name="dob" placeholder="Enter your Date of Birth"/>
+          <span id="dob-error" class="error-message"></span>
+        </div>
+
+        <div class="gender">
+          <p>Gender</p>
+          <input type="radio" id="male" name="gender" value="male" />
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">Female</label>
+          <span id="gender-error" class="error-message"></span>
+        </div>
+
+        <div class="input-group">
+          <label for="address">Address</label>
+          <input type="text" id="address" name="address" placeholder="Enter your Address"/>
+          <span id="address-error" class="error-message"></span>
+        </div>
+
+        <div class="input-group">
+          <label for="country">Country</label>
+          <select name="country" id="country">
+            <option value="" disabled selected class="one">
+              Select your Country
+            </option>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="Australia">Australia</option>
+            <option value="UK">UK</option>
+          </select>
+          <span id="country-error" class="error-message"></span>
+        </div>
+
+        <div class="input-group">
+          <label for="language">Language</label>
+          <select name="language" id="language">
+            <option value="" disabled selected>Select your Language</option>
+            <option value="English">English</option>
+            <option value="Tamil">Tamil</option>
+            <option value="Telegu">Telegu</option>
+            <option value="Hindi">Hindi</option>
+          </select>
+          <span id="language-error" class="error-message"></span>
+        </div>
+        <div class="input-group">
+          <label for="file">Upload file</label>
+          <input type="file" id="file" />
+          <span id="file-error" class="error-message"></span>
+        </div>
+
+        <!-- Submit button with onclick -->
+        <button type="button" onclick="formValidation()">Submit</button>
+      </div>
+    </div>
+  </body>
+</html>
