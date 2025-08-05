@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">1,2,3,4</p>
+    <button onclick="replacetext()">replace</button>
+    <script>
+        function replacetext()
+        {
+            let str = document.getElementById("demo").innerText;
+            let a = str.replace("1,2","one,two")
+            document.getElementById("demo").innerText = (a);
+            console.log(a);
+        }
+        // let str = "1,2,3,4,5,6";
+        // let a = str.replace("1,2","5,7");
+        // console.log(a);
+    </script>
+</body>
+</html>

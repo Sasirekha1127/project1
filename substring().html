@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">computer science</p>
+    <button onclick="show()">try it</button>
+    <script>
+        function show()
+        {
+        let str = document.getElementById("demo").innerText;
+        let value = str.substring(0,8);
+        document.getElementById("demo").innerText = (value);
+        console.log(value);
+        }
+        // let str = "mango,banana,cherry";
+        // let a = str.substring(0,4);
+        // console.log(a);
+    </script>
+</body>
+</html>
