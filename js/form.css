@@ -1,0 +1,87 @@
+body{
+    background: #3F5EFB;
+    background: radial-gradient(circle,rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.form{
+    width: 400px;
+    margin: 20vh auto 0 auto;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    padding: 40px;
+}
+h1{
+    text-align: center;
+    color: rgb(199, 32, 144);
+}
+button{
+    background-color: rgb(199, 32, 144);
+    color: white;
+    border-radius: 10px;
+    border: 2px solid rgb(199, 32, 144);
+    padding: 10px;
+    margin: 20px 0px;
+    width: 100%;    /* full length */
+}
+button:active{
+    background-color:rgb(146, 145, 150);
+    
+}
+.input-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.input-group input{
+    border-radius: 5px;
+    font-size: 15px;
+    margin-top: 5px;
+    border: 1px solid rgb(99, 187, 183);
+    padding: 5px;
+}
+.input-group input:focus{
+    outline: 0;
+}
+.input-group select{
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top: 5px;
+    border: 1px solid rgb(99, 187, 183);
+}
+select option{
+    font-size: 15px;
+}
+select:focus{
+    outline: 0;
+}
+ #country, #language{
+    padding: 5px;
+    font-size: 15px;
+}
+.error-message {
+    color: red;
+    font-size: 16px;
+    margin: 5px;
+}
+.input-error {
+    border: 1px solid red !important;
+}
+.gender{
+    margin-bottom: 15px;
+}
+/* select{
+    color: rgb(160, 156, 156);
+}
+select > option {
+    color: black;
+} */ 
+
+
+
+/* .input-group.success input{
+    border-color: rgb(5, 240, 130);
+}
+.input-group.error{
+    background-color: rgb(230, 21, 21);
+} */
