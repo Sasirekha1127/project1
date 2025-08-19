@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+      <input
+      type="text"
+      id="filename"
+      placeholder="Type file name (e.g. photo.png)"
+      />
+      <button onclick="getExtension()">Get Extension</button>
+      <p id="demo"></p>
+    <script>
+      function getExtension() {
+        let filename = document.getElementById("filename").value;
+        if(filename.includes('.')){
+            let ext = filename.substring(filename.lastIndexOf('.') + 1);
+            document.getElementById("demo").innerHTML = "The Extension is "+ext;
+            // alert("the extension is "+ext);
+        }
+        else{
+            document.getElementById("demo").innerHTML = "No Extension Found "+ext;
+            // alert("no extension found!");
+        }
+        
+      }
+    </script>
+  </body>
+</html>

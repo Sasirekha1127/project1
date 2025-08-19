@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function checkNumberType(num)
+        {
+            if (Number.isInteger(num)){
+                console.log(`${num} is an integer`);
+            }
+            else{
+                console.log(`${num} is a float `);
+            }
+        }
+        checkNumberType(10);
+        checkNumberType(23.8263);
+    </script>
+</body>
+</html>

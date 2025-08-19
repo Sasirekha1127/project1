@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Enter DOB:</label>
+    <input type="date" id="dob">
+    <button onclick="checkAge()">Check Age</button>
+    <p id="result"></p>
+   
+    <script>
+        function validateAgeRange(dobString) {
+            const today = new Date();
+            const birthDate = new Date(dobString);
+
+            if (isNaN(birthDate.getTime())) {
+                return "Invalid Date of Birth format.";
+            }
+
+            let age = today.getFullYear() - birthDate.getFullYear();
+            const m = today.getMonth() - birthDate.getMonth();
+
+            if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+                age--;
+            }
+
+            if (age >= 18 && age < 30) {
+                return " Age is valid (" + age + " years).";
+            } else if (age < 18) {
+                return "Age is below 18 (" + age + " years).";
+            } else {
+                return " Age is 30 or above (" + age + " years).";
+            }
+        }
+
+        function checkAge() {
+            let dobInput = document.getElementById("dob").value;
+            let message = validateAgeRange(dobInput);
+            document.getElementById("result").innerHTML = message;
+        }
+    </script>
+</body>
+</html>

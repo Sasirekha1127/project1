@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="result"></p>
+    <p id="output"></p>
+
+    <script>
+        // Numbers array
+        let num = [];
+        for (let i = 0; i <= 10; i++) {
+            num.push(i);
+        }
+        document.getElementById("result").innerHTML = "The numbers are: " + num.join(", ");
+
+        // Characters array
+        let char = [];
+        for (let i = 65; i <= 90; i++) {
+            char.push(String.fromCharCode(i));
+        }
+        document.getElementById("output").innerHTML = "The characters are: " + char.join(", ");
+    </script>
+</body>
+</html>

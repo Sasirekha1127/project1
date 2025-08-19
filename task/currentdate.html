@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="output"></p>
+    <script>
+        let today = new Date();
+        let fdate = new Date();
+        fdate.setDate(today.getDate()+15);
+        document.getElementById("output").innerHTML = "todays:"+today.toDateString()+"<br> 15 days later: "+fdate.toDateString();
+    </script>
+</body>
+</html>

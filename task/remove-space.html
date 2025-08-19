@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="name" placeholder="type something">
+    <button onclick="removespace()">remove space</button>
+    <p id = "demo"></p>
+    <p id="demo2"></p>
+    <script>
+        function removespace(){
+        let str1 = document.getElementById("name").value;
+        let str2 = str1.replace(/\s+/g, '');
+        document.getElementById("demo").innerHTML = str2;
+        document.getElementById("demo2").innerHTML = str1;
+        }
+    </script>
+</body>
+</html>
